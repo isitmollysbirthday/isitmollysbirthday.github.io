@@ -2,14 +2,19 @@
 <html>
 <body>
 
-<p>This example calls a function to convert from Fahrenheit to Celsius:</p>
 <p id="demo"></p>
 
 <script>
-function toCelsius(f) {
-    return (5/9) * (f-32);
+function toC(){
+	var d = new Date();
+	var m = d.getMonth();
+    var d_2 = d.getDate();
+    if (m==11 && d_2==3){
+    	return "YES"
+    }
+	return "NO"
 }
-document.getElementById("demo").innerHTML = toCelsius(77);
+document.getElementById("demo").innerHTML = toC();
 </script>
 
 </body>
