@@ -1,1 +1,14 @@
-<p>Hello World</p>
+<p class='answer'>NO</p>
+
+<script>
+  function getAnswer(){
+    var d = getDate()
+    var m = getMonth()
+    if (m == 12 and d == 6){
+         return 'YES' 
+    }else{
+      return 'NO'
+    }
+  }
+  document.getElementByClass('answer').innerHTML = getAnswer
+</script>
